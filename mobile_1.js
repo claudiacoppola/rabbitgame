@@ -11,6 +11,8 @@
   }
 }
 
- if(navigator.userAgent.match(/android/i)){ window.scrollTo(0,1); }
-
-Fuente: https://www.iteramos.com/pregunta/32648/la-eliminacion-de-la-barra-de-direcciones-del-navegador-para-ver-en-android
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
+});
