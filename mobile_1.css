@@ -6,9 +6,14 @@
   font-family:ubuntuFS;
 }
 
-body
+html
 {
-	background:#96F0B0;
+	width:100vw;
+	height:100vh;
+;
+	display:flex;
+	align-items:center;
+justify-content:center;
 }
 
 @font-face
@@ -19,15 +24,19 @@ body
 
 .mobile-container
 {
-	display:flex;
-	align-items:center;
-	justify-content:center;
+	
+	
+	
 	color:#fff;
-	margin:auto;
 	height:100vh;
-	max-width:100vw;
+	display:flex;
+	width:100vw;
 	background:#96F0B0;
-	border: 1px dashed grey;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;	background:url(src/BackGD1A.png) no-repeat center fixed;
+	background-size:cover
+
 }
 
 /*------------------------------------------------------------------------*/
@@ -68,4 +77,24 @@ flex-direction: column;
 font-size:14px;
 letter-spacing:5px;
 text-align:center;
+}
+
+#loader {
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  border: 16px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 16px solid #14a376;
+  animation: spin 2s linear infinite;
+  position:absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
