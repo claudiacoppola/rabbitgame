@@ -11,13 +11,6 @@
   }
 }
 
-function hideAddressBar() {
-  if(!window.location.hash) {
-    if(document.height < window.outerHeight)
-      document.body.style.height = (window.outerHeight + 50) + 'px';
-    setTimeout( function(){ 
-        window.scrollTo(0, 1); 
-        document.body.style.height = 'auto'; 
-      }, 50 );
-  }
-}
+ if(navigator.userAgent.match(/android/i)){ window.scrollTo(0,1); }
+
+Fuente: https://www.iteramos.com/pregunta/32648/la-eliminacion-de-la-barra-de-direcciones-del-navegador-para-ver-en-android
