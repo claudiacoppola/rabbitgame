@@ -1,0 +1,57 @@
+* {
+		  margin:0; padding:0; font-family:ubuntuFS;
+		}
+
+		body{
+			background:#96F0B0;
+		}
+
+		@font-face {
+		  	font-family:ubuntuFS; src:url(fonts/ubuntu-text.ttf);
+		}
+
+		.mobile-container {
+		  	color:#fff; margin:auto; height:100vh; max-width:500px; background:#96F0B0;border: 1px dashed grey;}
+
+		.topnav {
+		 	overflow:hidden; background:#14A376; position:relative;
+		}
+
+		.topnav #myLinks {
+		  	display: none;
+		}
+
+		.topnav a {
+			color:#fff; padding:14px 16px; text-decoration:none;
+		  	font-size:17px; display:block;
+		}
+
+		.topnav a.icon {
+			background:#14A376; display:block; position:absolute; right:0; top:0;
+		}
+
+		.topnav a:hover {
+			background:#2eb98d; color:#000;
+		}
+
+		.active {
+		  	background:#14A376; color:#fff;
+		}
+		/*------------------------------------------------------------------------*/
+		img{
+			max-width:100%; height:auto;
+		}
+
+		#backGR {
+			height:200px; width:200px; 
+			background:url(src/MagicGS3A.png) no-repeat, url(src/MagicGS3B.png) repeat-x; background-position:0 100%, 0 100%; background-size:cover; 
+			animation: 3s logo infinite alternate; border-radius:100%;
+		}
+		@keyframes logo
+		{
+			100%{background-position:0px 100%, -400px 100%;}
+		}
+
+		#content-logo{
+			height:100vh; max-width:500px; display: flex; align-items: center;justify-content:center; flex-direction:column;
+		}
