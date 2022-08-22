@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mobile_1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style>
+		* {
+		  margin:0; padding:0; font-family:ubuntuFS;
+		}
+
+		body{
+			background:#96F0B0;
+		}
+
+		@font-face {
+		  	font-family:ubuntuFS; src:url(fonts/ubuntu-text.ttf);
+		}
+
+		.mobile-container {
+		  	color:#fff; margin:auto; height:100vh; max-width:500px; background:#96F0B0;border: 1px dashed grey;}
+
+		.topnav {
+		 	overflow:hidden; background:#14A376; position:relative;
+		}
+
+		.topnav #myLinks {
+		  	display: none;
+		}
+
+		.topnav a {
+			color:#fff; padding:14px 16px; text-decoration:none;
+		  	font-size:17px; display:block;
+		}
+
+		.topnav a.icon {
+			background:#14A376; display:block; position:absolute; right:0; top:0;
+		}
+
+		.topnav a:hover {
+			background:#2eb98d; color:#000;
+		}
+
+		.active {
+		  	background:#14A376; color:#fff;
+		}
+		/*------------------------------------------------------------------------*/
+		img{
+			max-width:100%; height:auto;
+		}
+
+		#backGR {
+			height:200px; width:200px; 
+			background:url(MagicGS3A.png) no-repeat, url(MagicGS3B.png) repeat-x; background-position:0 100%, 0 100%; background-size:cover; 
+			animation: 3s logo infinite alternate; border-radius:100%;
+		}
+		@keyframes logo
+		{
+			100%{background-position:0px 100%, -400px 100%;}
+		}
+
+		#content-logo{
+			height:100vh; max-width:500px; display: flex; align-items: center;justify-content:center; flex-direction:column;
+		}
+	</style>
+</head>
+<body>
+	<div class="mobile-container">
+		<div class="topnav">
+		  <a href="#home" class="active">Home</a>
+			  <div id="myLinks">
+			    <a href="#news">News</a>
+			    <a href="#contacto">Contact</a>
+			    <a href="#about">About</a>
+			  </div>
+		  <a href="javascript:void(0);" class="icon" onclick="mobilePhone()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+		</div>
+		<div id="content-logo">
+			<div id="backGR"></div>
+			<h1 style="color: #14A376;">Rabbit<span style="color:#134132;">Game</span></h1>
+		</div>
+		
+	</div>
+<script>
+	function mobilePhone()
+{
+  var x = document.getElementById("myLinks");
+  if(x.style.display === "block")
+  {
+    x.style.display = "none";
+  }
+  else
+  {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
