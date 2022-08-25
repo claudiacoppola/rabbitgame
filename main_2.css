@@ -24,29 +24,32 @@ html
 .mobile-container
 {
 	color:#fff;
-	width:100vw;
 	height:100vh;
 	display:flex;
+	width:100vw;
 	background:#96F0B0;
 	align-items:center;
 	flex-direction:column;
-	justify-content:center;	background:url(src/BackGD1A.png) no-repeat center fixed; background-size:cover
+	justify-content:center;	background:url(src/BackGD1A.png) no-repeat center fixed;
+	background-size:cover
 }
+
 
 img
 {
-	height:auto;
 	max-width:100%;
+	height:auto;
 }
 
 #backGR
 {
-	width:170px; 
-	height:170px;
-	border-radius:100%;
-	background:url(src/MagicGS3A.png) no-repeat, url(src/MagicGS3B.png) repeat-x;	background-size:cover; 
+	height:200px;
+	width:200px; 
+	background:url(src/MagicGS3A.png) no-repeat, url(src/MagicGS3B.png) repeat-x;
 	background-position:0 100%, 0 100%;
+	background-size:cover; 
 	animation: 3s logo infinite alternate;
+	border-radius:100%;
 }
 
 @keyframes logo
@@ -57,40 +60,45 @@ img
 #content-logo
 {
 	height:100vh;
-	display:flex;
 	max-width:500px;
-	text-align:center;
-	align-items:center;
-	flex-direction:column;
+	display: flex;
+	align-items: center;
 	justify-content:center;
+	flex-direction:column;
+	text-align:center;
 }
 
 @media (orientation:landscape){body{flex-direction:row;}}
-@media (orientation: portrait){body{flex-direction:column;}}
+@media (orientation: portrait){body{flex-direction: column;}}
 
 .txt
 {
 	font-size:14px;
-	text-align:center;
 	letter-spacing:5px;
+	text-align:center;
 }
 
 #loader
-{ 
-	z-index:1;
-  width:170px;
-  height:170px;
+{
+
 	display:flex;
-	position:absolute;
-	border-radius:100%;
 	align-items:center;
 	justify-content:center;
-  border:16px solid #f3f3f3;
-  border-top:16px solid #14a376;
-  animation:loader 2s linear infinite;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  border: 16px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 16px solid #14a376;
+  animation: spin 2s linear infinite;
+  position:absolute;
 }
 
-@keyframes loader
+@keyframes spin
 {
-  0%{transform: rotate(0deg);} 100%{transform: rotate(360deg);}
+  0%
+  {transform: rotate(0deg);}
+  
+  100%
+  {transform: rotate(360deg);}
 }
