@@ -1,0 +1,96 @@
+* 
+{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  font-family:ubuntuFS;
+}
+
+html
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+@font-face
+{
+	font-family:ubuntuFS;
+	src:url(fonts/ubuntu-text.ttf);
+}
+
+.mobile-container
+{
+	color:#fff;
+	width:100vw;
+	height:100vh;
+	display:flex;
+	background:#96F0B0;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;	background:url(src/BackGD1A.png) no-repeat center fixed; background-size:cover
+}
+
+img
+{
+	height:auto;
+	max-width:100%;
+}
+
+#backGR
+{
+	width:200px; 
+	height:200px;
+	border-radius:100%;
+	background:url(src/MagicGS3A.png) no-repeat, url(src/MagicGS3B.png) repeat-x;	background-size:cover; 
+	background-position:0 100%, 0 100%;
+	animation: 3s logo infinite alternate;
+}
+
+@keyframes logo
+{
+	100%{background-position:0px 100%,-400px 100%;}
+}
+
+#content-logo
+{
+	height:100vh;
+	display:flex;
+	max-width:500px;
+	text-align:center;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+
+@media (orientation:landscape){body{flex-direction:row;}}
+@media (orientation: portrait){body{flex-direction:column;}}
+
+.txt
+{
+	font-size:14px;
+	text-align:center;
+	letter-spacing:5px;
+}
+
+#loader
+{ 
+	z-index:1;
+  width:200px;
+  height:200px;
+	display:flex;
+	position:absolute;
+	border-radius:100%;
+	align-items:center;
+	justify-content:center;
+  border:16px solid #f3f3f3;
+  border-top:16px solid #14a376;
+  animation:loader 2s linear infinite;
+}
+
+@keyframes loader
+{
+  0%{transform: rotate(0deg);} 100%{transform: rotate(360deg);}
+}
