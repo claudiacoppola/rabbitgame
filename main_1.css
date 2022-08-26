@@ -15,12 +15,6 @@ html
 	justify-content:center;
 }
 
-.starEfect
-{
-	width:100vw;
-	height:100vh;
-}
-
 .star
 {
 	top:200px;
@@ -44,8 +38,8 @@ html
 	align-items:center;
 	flex-direction:column;
 	justify-content:center;
-	background:url(src/BackGD1A.png) repeat-x center fixed, url(src/sky.png) repeat-x;
-	background-position:0 100%, 0 100%;
+	background:url(src/BackGD1A.png), url(src/sky.png) repeat-x;
+	background-position:100%, 0 100%;
 	animation: 3s backGR infinite alternate;
 }
 
