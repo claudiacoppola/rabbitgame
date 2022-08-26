@@ -15,6 +15,19 @@ html
 	justify-content:center;
 }
 
+.starEfect
+{
+	width:100vw;
+	height:100vh;
+}
+
+.star
+{
+	top:200px;
+	left:320px;
+	position:absolute;
+}
+
 @font-face
 {
 	font-family:ubuntuFS;
@@ -27,10 +40,18 @@ html
 	width:100vw;
 	height:100vh;
 	display:flex;
-	background:#96F0B0;
+	background:#96f0b0;
 	align-items:center;
 	flex-direction:column;
-	justify-content:center;	background:url(src/BackGD1A.png) no-repeat center fixed; background-size:cover
+	justify-content:center;
+	background:url(src/BackGD1A.png) repeat-x center fixed, url(src/sky.png) repeat-x;
+	background-position:0 100%, 0 100%;
+	animation: 3s backGR infinite alternate;
+}
+
+@keyframes backGR
+{
+  100%{background-position:0px 100%,-2500px 100%;}
 }
 
 img
@@ -78,15 +99,15 @@ img
 #loader
 { 
 	z-index:1;
-  width:170px;
-  height:170px;
+  width:165px;
+  height:165px;
 	display:flex;
 	position:absolute;
 	border-radius:100%;
 	align-items:center;
 	justify-content:center;
-  border:16px solid #f3f3f3;
-  border-top:16px solid #14a376;
+  border:14px solid rgba(0, 0, 0, 0.9);
+  border-top:16px solid #d5a71c;
   animation:loader 2s linear infinite;
 }
 
